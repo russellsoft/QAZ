@@ -145,14 +145,14 @@ export const products: Product[] = [
   {
     id: 'ammonium-nitrate',
     name: {
-      ru: 'Аммиачная селитра',
-      en: 'Ammonium Nitrate',
-      cn: '硝酸铵'
+      ru: 'Аммиачная селитра (N34)',
+      en: 'Ammonium Nitrate (N34)',
+      cn: '硝酸铵 (N34)'
     },
     description: {
-      ru: 'Универсальное азотное удобрение, подходящее для всех типов почв и сельскохозяйственных культур.',
-      en: 'Universal nitrogen fertilizer suitable for all soil types and agricultural crops.',
-      cn: '通用氮肥，适用于各种土壤类型和农作物。'
+      ru: 'Универсальное азотное удобрение с содержанием азота 34%, подходящее для всех типов почв и сельскохозяйственных культур.',
+      en: 'Universal nitrogen fertilizer with 34% nitrogen content, suitable for all soil types and agricultural crops.',
+      cn: '含氮量34%的通用氮肥，适用于各种土壤类型和农作物。'
     },
     imageUrl: 'https://images.pexels.com/photos/5560027/pexels-photo-5560027.jpeg',
     chemicalProperties: {
@@ -164,7 +164,7 @@ export const products: Product[] = [
             en: 'Nitrogen (N)',
             cn: '氮 (N)'
           },
-          percentage: '34.4%'
+          percentage: '34%'
         }
       ]
     },
@@ -195,6 +195,492 @@ export const products: Product[] = [
         '播种前施用',
         '生长期追肥',
         '适用于所有农作物'
+      ]
+    },
+    category: {
+      ru: 'Азотные удобрения',
+      en: 'Nitrogen fertilizers',
+      cn: '氮肥'
+    }
+  },
+  {
+    id: 'calcium-ammonium-nitrate',
+    name: {
+      ru: 'Удобрение азотно-известняковое (27N5Ca4Mg)',
+      en: 'Calcium Ammonium Nitrate (27N5Ca4Mg)',
+      cn: '硝酸铵钙 (27N5Ca4Mg)'
+    },
+    description: {
+      ru: 'Комплексное азотное удобрение с добавлением кальция и магния, обеспечивающее сбалансированное питание растений.',
+      en: 'Complex nitrogen fertilizer with added calcium and magnesium, providing balanced plant nutrition.',
+      cn: '添加钙和镁的复合氮肥，提供平衡的植物营养。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/6320076/pexels-photo-6320076.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '27%'
+        },
+        {
+          name: {
+            ru: 'Кальций (Ca)',
+            en: 'Calcium (Ca)',
+            cn: '钙 (Ca)'
+          },
+          percentage: '5%'
+        },
+        {
+          name: {
+            ru: 'Магний (Mg)',
+            en: 'Magnesium (Mg)',
+            cn: '镁 (Mg)'
+          },
+          percentage: '4%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы белого или светло-серого цвета',
+        en: 'White or light gray granules',
+        cn: '白色或浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Подходит для почв с недостатком кальция и магния',
+        'Эффективно для овощных и плодовых культур'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Suitable for soils lacking calcium and magnesium',
+        'Effective for vegetable and fruit crops'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '适用于缺钙和缺镁的土壤',
+        '对蔬菜和水果作物效果好'
+      ]
+    },
+    category: {
+      ru: 'Азотные удобрения',
+      en: 'Nitrogen fertilizers',
+      cn: '氮肥'
+    }
+  },
+  {
+    id: 'ammonium-sulfate',
+    name: {
+      ru: 'Сульфат аммония (21N24S)',
+      en: 'Ammonium Sulfate (21N24S)',
+      cn: '硫酸铵 (21N24S)'
+    },
+    description: {
+      ru: 'Азотно-серное удобрение, особенно эффективное для культур, требовательных к сере.',
+      en: 'Nitrogen-sulfur fertilizer, particularly effective for sulfur-demanding crops.',
+      cn: '氮硫肥料，特别适用于需硫量大的作物。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560028/pexels-photo-5560028.jpeg',
+    chemicalProperties: {
+      formula: '(NH4)2SO4',
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '21%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '24%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Кристаллический порошок или гранулы белого цвета',
+        en: 'Crystalline powder or white granules',
+        cn: '结晶粉末或白色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение и подкормка',
+        'Особенно эффективен для крестоцветных культур',
+        'Применяется на щелочных и карбонатных почвах'
+      ],
+      en: [
+        'Basic application and feeding',
+        'Especially effective for cruciferous crops',
+        'Used on alkaline and carbonate soils'
+      ],
+      cn: [
+        '基础施肥和追肥',
+        '特别适用于十字花科作物',
+        '用于碱性和碳酸盐土壤'
+      ]
+    },
+    category: {
+      ru: 'Азотные удобрения',
+      en: 'Nitrogen fertilizers',
+      cn: '氮肥'
+    }
+  },
+  {
+    id: 'urea-n46',
+    name: {
+      ru: 'Карбамид (N46)',
+      en: 'Urea (N46)',
+      cn: '尿素 (N46)'
+    },
+    description: {
+      ru: 'Высококонцентрированное азотное удобрение с содержанием азота 46%, наиболее концентрированное из твердых азотных удобрений.',
+      en: 'Highly concentrated nitrogen fertilizer with 46% nitrogen content, the most concentrated solid nitrogen fertilizer.',
+      cn: '含氮量46%的高浓度氮肥，是固体氮肥中浓度最高的。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560029/pexels-photo-5560029.jpeg',
+    chemicalProperties: {
+      formula: 'CO(NH2)2',
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '46%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Белые гранулы или кристаллы',
+        en: 'White granules or crystals',
+        cn: '白色颗粒或晶体'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Припосевное внесение',
+        'Корневая и внекорневая подкормка'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Application during sowing',
+        'Root and foliar feeding'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '播种时施用',
+        '根部和叶面施肥'
+      ]
+    },
+    category: {
+      ru: 'Азотные удобрения',
+      en: 'Nitrogen fertilizers',
+      cn: '氮肥'
+    }
+  },
+  {
+    id: 'sulfonitrate-30n7s',
+    name: {
+      ru: 'Сульфонитрат (30N7S)',
+      en: 'Sulfonitrate (30N7S)',
+      cn: '硫硝酸盐 (30N7S)'
+    },
+    description: {
+      ru: 'Комплексное азотно-серное удобрение с оптимальным соотношением питательных элементов.',
+      en: 'Complex nitrogen-sulfur fertilizer with optimal nutrient ratio.',
+      cn: '养分比例最优的复合氮硫肥料。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560030/pexels-photo-5560030.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '30%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '7%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы светло-серого цвета',
+        en: 'Light gray granules',
+        cn: '浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Подкормка серосодержащих культур',
+        'Эффективен для масличных культур'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Feeding sulfur-containing crops',
+        'Effective for oilseed crops'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '含硫作物追肥',
+        '对油料作物效果好'
+      ]
+    },
+    category: {
+      ru: 'Азотные удобрения',
+      en: 'Nitrogen fertilizers',
+      cn: '氮肥'
+    }
+  },
+  {
+    id: 'sulfonitrate-26n13s',
+    name: {
+      ru: 'Сульфонитрат (26N13S)',
+      en: 'Sulfonitrate (26N13S)',
+      cn: '硫硝酸盐 (26N13S)'
+    },
+    description: {
+      ru: 'Азотно-серное удобрение с повышенным содержанием серы для культур с высокой потребностью в сере.',
+      en: 'Nitrogen-sulfur fertilizer with increased sulfur content for crops with high sulfur demand.',
+      cn: '含硫量高的氮硫肥料，适用于高需硫作物。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560031/pexels-photo-5560031.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '26%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '13%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы светло-серого цвета',
+        en: 'Light gray granules',
+        cn: '浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Особенно эффективен для рапса и горчицы',
+        'Подкормка овощных культур'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Especially effective for rapeseed and mustard',
+        'Feeding vegetable crops'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '特别适用于油菜和芥菜',
+        '蔬菜作物追肥'
+      ]
+    },
+    category: {
+      ru: 'Азотные удобрения',
+      en: 'Nitrogen fertilizers',
+      cn: '氮肥'
+    }
+  },
+  {
+    id: 'uan-n32',
+    name: {
+      ru: 'КАС (N32)',
+      en: 'UAN (N32)',
+      cn: '碳铵溶液 (N32)'
+    },
+    description: {
+      ru: 'Жидкое азотное удобрение, содержащее три формы азота: нитратную, аммонийную и амидную.',
+      en: 'Liquid nitrogen fertilizer containing three forms of nitrogen: nitrate, ammonium, and amide.',
+      cn: '含硝态氮、铵态氮和酰胺态氮三种形态的液体氮肥。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560032/pexels-photo-5560032.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '32%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Прозрачная бесцветная жидкость',
+        en: 'Clear colorless liquid',
+        cn: '清澈无色液体'
+      },
+      solubility: {
+        ru: 'Жидкая форма',
+        en: 'Liquid form',
+        cn: '液体形态'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Корневая подкормка в период вегетации',
+        'Внекорневая подкормка'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Root feeding during vegetation',
+        'Foliar feeding'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '生长期根部追肥',
+        '叶面施肥'
+      ]
+    },
+    category: {
+      ru: 'Азотные удобрения',
+      en: 'Nitrogen fertilizers',
+      cn: '氮肥'
+    }
+  },
+  {
+    id: 'nitroammophoska-27-6-6-3s',
+    name: {
+      ru: 'Нитроаммофоска (27.6.6.+3S)',
+      en: 'Nitroammophoska (27.6.6.+3S)',
+      cn: '硝铵磷钾 (27.6.6.+3S)'
+    },
+    description: {
+      ru: 'Комплексное удобрение с высоким содержанием азота и сбалансированным содержанием фосфора, калия и серы.',
+      en: 'Complex fertilizer with high nitrogen content and balanced content of phosphorus, potassium, and sulfur.',
+      cn: '高氮含量，磷、钾、硫含量均衡的复合肥料。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560033/pexels-photo-5560033.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '27%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '6%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '6%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '3%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы светло-розового или серого цвета',
+        en: 'Light pink or gray granules',
+        cn: '浅粉色或灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Припосевное внесение',
+        'Подкормка в период вегетации'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Application during sowing',
+        'Feeding during vegetation'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '播种时施用',
+        '生长期追肥'
       ]
     },
     category: {
