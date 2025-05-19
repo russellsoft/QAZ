@@ -1093,5 +1093,905 @@ export const products: Product[] = [
       en: 'Nitrogen fertilizers',
       cn: '氮肥'
     }
+  },
+  {
+    id: 'npk-16-16-16',
+    name: {
+      ru: 'Нитроаммофоска (16.16.16)',
+      en: 'NPK Fertilizer (16.16.16)',
+      cn: '复合肥 (16.16.16)'
+    },
+    description: {
+      ru: 'Сбалансированное комплексное удобрение с равным содержанием азота, фосфора и калия.',
+      en: 'Balanced complex fertilizer with equal content of nitrogen, phosphorus, and potassium.',
+      cn: '氮、磷、钾含量均衡的复合肥料。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560034/pexels-photo-5560034.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '16%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '16%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '16%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы серого или светло-розового цвета',
+        en: 'Gray or light pink granules',
+        cn: '灰色或浅粉色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Припосевное внесение',
+        'Подкормка в период вегетации'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Application during sowing',
+        'Feeding during vegetation'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '播种时施用',
+        '生长期追肥'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'npk-16-16-8',
+    name: {
+      ru: 'Нитроаммофоска (16.16.8)',
+      en: 'NPK Fertilizer (16.16.8)',
+      cn: '复合肥 (16.16.8)'
+    },
+    description: {
+      ru: 'Комплексное удобрение с повышенным содержанием азота и фосфора относительно калия.',
+      en: 'Complex fertilizer with increased nitrogen and phosphorus content relative to potassium.',
+      cn: '相对于钾含量，氮和磷含量较高的复合肥料。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560035/pexels-photo-5560035.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '16%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '16%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '8%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы серого цвета',
+        en: 'Gray granules',
+        cn: '灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Особенно эффективно для зерновых культур',
+        'Подкормка в начальные фазы роста'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Especially effective for grain crops',
+        'Feeding in initial growth phases'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '特别适用于谷物作物',
+        '生长初期追肥'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'npk-13-13-24',
+    name: {
+      ru: 'Нитроаммофоска (13.13.24)',
+      en: 'NPK Fertilizer (13.13.24)',
+      cn: '复合肥 (13.13.24)'
+    },
+    description: {
+      ru: 'Комплексное удобрение с повышенным содержанием калия для культур, требовательных к калийному питанию.',
+      en: 'Complex fertilizer with increased potassium content for crops demanding in potassium nutrition.',
+      cn: '适用于需钾量大的作物的高钾复合肥料。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560036/pexels-photo-5560036.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '13%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '13%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '24%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы светло-серого цвета',
+        en: 'Light gray granules',
+        cn: '浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под картофель и овощные культуры',
+        'Подкормка плодовых культур',
+        'Применение на легких почвах'
+      ],
+      en: [
+        'Basic application for potatoes and vegetable crops',
+        'Feeding fruit crops',
+        'Application on light soils'
+      ],
+      cn: [
+        '马铃薯和蔬菜作物基础施肥',
+        '果树追肥',
+        '轻质土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'npk-20-10-10-4s',
+    name: {
+      ru: 'Нитроаммофоска (20.10.10+4S)',
+      en: 'NPK Fertilizer (20.10.10+4S)',
+      cn: '复合肥 (20.10.10+4S)'
+    },
+    description: {
+      ru: 'Комплексное удобрение с повышенным содержанием азота и добавлением серы.',
+      en: 'Complex fertilizer with increased nitrogen content and added sulfur.',
+      cn: '高氮含量并添加硫的复合肥料。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560037/pexels-photo-5560037.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '20%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '10%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '10%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '4%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы светло-серого цвета',
+        en: 'Light gray granules',
+        cn: '浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под зерновые культуры',
+        'Подкормка технических культур',
+        'Применение на почвах с дефицитом серы'
+      ],
+      en: [
+        'Basic application for grain crops',
+        'Feeding industrial crops',
+        'Application on sulfur-deficient soils'
+      ],
+      cn: [
+        '谷物作物基础施肥',
+        '工业作物追肥',
+        '缺硫土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'dap-10-26-26',
+    name: {
+      ru: 'Диаммофоска (10.26.26)',
+      en: 'Diammonium Phosphate (10.26.26)',
+      cn: '磷酸二铵 (10.26.26)'
+    },
+    description: {
+      ru: 'Комплексное удобрение с высоким содержанием фосфора и калия для интенсивного питания растений.',
+      en: 'Complex fertilizer with high phosphorus and potassium content for intensive plant nutrition.',
+      cn: '高磷高钾复合肥料，用于作物集约营养。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560038/pexels-photo-5560038.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '10%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '26%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '26%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы серого цвета',
+        en: 'Gray granules',
+        cn: '灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Особенно эффективно для корнеплодов',
+        'Подкормка плодовых культур'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Especially effective for root crops',
+        'Feeding fruit crops'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '特别适用于根茎作物',
+        '果树追肥'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'npk-8-20-30-2s',
+    name: {
+      ru: '8.20.30+2S',
+      en: '8.20.30+2S',
+      cn: '8.20.30+2S'
+    },
+    description: {
+      ru: 'Комплексное удобрение с высоким содержанием калия и фосфора, дополненное серой.',
+      en: 'Complex fertilizer with high potassium and phosphorus content, supplemented with sulfur.',
+      cn: '高钾高磷复合肥料，添加硫。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560039/pexels-photo-5560039.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '8%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '20%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '30%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '2%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы светло-серого цвета',
+        en: 'Light gray granules',
+        cn: '浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под овощные культуры',
+        'Подкормка плодовых деревьев',
+        'Применение на почвах с дефицитом калия'
+      ],
+      en: [
+        'Basic application for vegetable crops',
+        'Feeding fruit trees',
+        'Application on potassium-deficient soils'
+      ],
+      cn: [
+        '蔬菜作物基础施肥',
+        '果树追肥',
+        '缺钾土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'npk-10-20-20-s',
+    name: {
+      ru: '10.20.20+S',
+      en: '10.20.20+S',
+      cn: '10.20.20+S'
+    },
+    description: {
+      ru: 'Сбалансированное комплексное удобрение с повышенным содержанием фосфора и калия, обогащенное серой.',
+      en: 'Balanced complex fertilizer with increased phosphorus and potassium content, enriched with sulfur.',
+      cn: '磷钾含量较高的均衡复合肥料，富含硫。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560040/pexels-photo-5560040.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '10%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '20%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '20%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '5%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы серого цвета',
+        en: 'Gray granules',
+        cn: '灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под технические культуры',
+        'Подкормка овощных культур',
+        'Применение на серосодержащих почвах'
+      ],
+      en: [
+        'Basic application for industrial crops',
+        'Feeding vegetable crops',
+        'Application on sulfur-containing soils'
+      ],
+      cn: [
+        '工业作物基础施肥',
+        '蔬菜作物追肥',
+        '含硫土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'npk-15-15-15-10s',
+    name: {
+      ru: '15.15.15+10S',
+      en: '15.15.15+10S',
+      cn: '15.15.15+10S'
+    },
+    description: {
+      ru: 'Сбалансированное комплексное удобрение с высоким содержанием серы для интенсивного питания растений.',
+      en: 'Balanced complex fertilizer with high sulfur content for intensive plant nutrition.',
+      cn: '高硫含量的均衡复合肥料，用于作物集约营养。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560041/pexels-photo-5560041.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '15%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '15%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '15%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '10%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы светло-серого цвета',
+        en: 'Light gray granules',
+        cn: '浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под масличные культуры',
+        'Подкормка крестоцветных культур',
+        'Применение на почвах с дефицитом серы'
+      ],
+      en: [
+        'Basic application for oilseed crops',
+        'Feeding cruciferous crops',
+        'Application on sulfur-deficient soils'
+      ],
+      cn: [
+        '油料作物基础施肥',
+        '十字花科作物追肥',
+        '缺硫土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'npk-13-19-19-6s',
+    name: {
+      ru: '13.19.19+6S',
+      en: '13.19.19+6S',
+      cn: '13.19.19+6S'
+    },
+    description: {
+      ru: 'Комплексное удобрение с повышенным содержанием фосфора и калия, дополненное серой.',
+      en: 'Complex fertilizer with increased phosphorus and potassium content, supplemented with sulfur.',
+      cn: '高磷高钾复合肥料，添加硫。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560042/pexels-photo-5560042.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '13%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '19%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '19%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '6%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы серого цвета',
+        en: 'Gray granules',
+        cn: '灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под технические культуры',
+        'Подкормка овощных культур',
+        'Применение на почвах с дефицитом фосфора и калия'
+      ],
+      en: [
+        'Basic application for industrial crops',
+        'Feeding vegetable crops',
+        'Application on phosphorus and potassium deficient soils'
+      ],
+      cn: [
+        '工业作物基础施肥',
+        '蔬菜作物追肥',
+        '缺磷缺钾土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'npk-5-15-30-5s-7ca',
+    name: {
+      ru: '5.15.30+5S+7Ca',
+      en: '5.15.30+5S+7Ca',
+      cn: '5.15.30+5S+7Ca'
+    },
+    description: {
+      ru: 'Комплексное удобрение с высоким содержанием калия, обогащенное серой и кальцием.',
+      en: 'Complex fertilizer with high potassium content, enriched with sulfur and calcium.',
+      cn: '高钾复合肥料，富含硫和钙。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560043/pexels-photo-5560043.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Азот (N)',
+            en: 'Nitrogen (N)',
+            cn: '氮 (N)'
+          },
+          percentage: '5%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '15%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '30%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '5%'
+        },
+        {
+          name: {
+            ru: 'Кальций (Ca)',
+            en: 'Calcium (Ca)',
+            cn: '钙 (Ca)'
+          },
+          percentage: '7%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы светло-серого цвета',
+        en: 'Light gray granules',
+        cn: '浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под плодовые культуры',
+        'Подкормка овощных культур',
+        'Применение на кислых почвах'
+      ],
+      en: [
+        'Basic application for fruit crops',
+        'Feeding vegetable crops',
+        'Application on acidic soils'
+      ],
+      cn: [
+        '果树基础施肥',
+        '蔬菜作物追肥',
+        '酸性土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
+  },
+  {
+    id: 'npk-0-20-20-20ca-5s',
+    name: {
+      ru: '0.20.20+20Ca+5S',
+      en: '0.20.20+20Ca+5S',
+      cn: '0.20.20+20Ca+5S'
+    },
+    description: {
+      ru: 'Бесазотное комплексное удобрение с высоким содержанием фосфора, калия и кальция.',
+      en: 'Nitrogen-free complex fertilizer with high content of phosphorus, potassium, and calcium.',
+      cn: '无氮复合肥料，高磷、钾、钙含量。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560044/pexels-photo-5560044.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '20%'
+        },
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '20%'
+        },
+        {
+          name: {
+            ru: 'Кальций (Ca)',
+            en: 'Calcium (Ca)',
+            cn: '钙 (Ca)'
+          },
+          percentage: '20%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '5%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы белого или светло-серого цвета',
+        en: 'White or light gray granules',
+        cn: '白色或浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под плодовые культуры',
+        'Подкормка овощных культур',
+        'Применение на кислых почвах с высоким содержанием азота'
+      ],
+      en: [
+        'Basic application for fruit crops',
+        'Feeding vegetable crops',
+        'Application on acidic soils with high nitrogen content'
+      ],
+      cn: [
+        '果树基础施肥',
+        '蔬菜作物追肥',
+        '高氮酸性土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Комплексные удобрения',
+      en: 'Complex fertilizers',
+      cn: '复合肥料'
+    }
   }
 ];
