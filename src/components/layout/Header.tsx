@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import { Menu, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../../context/LanguageContext';
 import { Language } from '../../types';
 import { motion } from 'framer-motion';
@@ -11,6 +11,8 @@ const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
+
+  const isHome = location.pathname === '/ru/' || location.pathname === '/en/' || location.pathname === '/cn/'
 
   // Check if page is scrolled for header styling
   useEffect(() => {
@@ -45,7 +47,7 @@ const Header: React.FC = () => {
   return (
     <header 
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-6'
+        isHome ? (isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-6') : 'bg-white shadow-md py-3'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
@@ -55,7 +57,7 @@ const Header: React.FC = () => {
             className="flex items-center cursor-pointer" 
             onClick={() => navigate(`/${language}/`)}
           >
-            <span className={`text-2xl font-bold ${isScrolled ? 'text-primary-700' : 'text-white'}`}>QAZ</span>
+            <span className={`text-2xl font-bold ${isHome ? (isScrolled ? 'text-primary-700' : 'text-white') : 'text-primary-700'}`}>QAZ</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -69,7 +71,7 @@ const Header: React.FC = () => {
                   navigate(item.path);
                 }}
                 className={`${
-                  isScrolled ? 'text-neutral-800' : 'text-white'
+                  isHome ? (isScrolled ? 'text-neutral-800' : 'text-white') : 'text-neutral-800'
                 } hover:text-primary-500 transition-colors duration-200`}
               >
                 {item.name}
@@ -80,7 +82,7 @@ const Header: React.FC = () => {
             <div className="relative group">
               <button 
                 className={`flex items-center space-x-1 ${
-                  isScrolled ? 'text-neutral-800' : 'text-white'
+                    isHome ? (isScrolled ? 'text-neutral-800' : 'text-white') : 'text-neutral-800'
                 } hover:text-primary-500`}
               >
                 <span>{language.toUpperCase()}</span>
@@ -108,9 +110,9 @@ const Header: React.FC = () => {
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X className={isScrolled ? 'text-neutral-800' : 'text-white'} />
+                isHome ? (isScrolled ? 'text-neutral-800' : 'text-white') : 'text-neutral-800'
             ) : (
-              <Menu className={isScrolled ? 'text-neutral-800' : 'text-white'} />
+              <Menu className={isHome ? (isScrolled ? 'text-neutral-800' : 'text-white') : 'text-neutral-800'} />
             )}
           </button>
         </div>
