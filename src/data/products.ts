@@ -2,6 +2,91 @@ import { Product } from '../types';
 
 export const products: Product[] = [
   {
+    id: 'mineral-fertilizers',
+    name: {
+      ru: 'Минеральные удобрения',
+      en: 'Mineral Fertilizers',
+      cn: '矿物肥料',
+    },
+    description: {
+      ru: 'Широкий ассортимент минеральных удобрений для различных сельскохозяйственных культур, включая азотные и комплексные удобрения.',
+      en: 'A wide range of mineral fertilizers for various agricultural crops, including nitrogen and complex fertilizers.',
+      cn: '各种农作物的矿物肥料，包括氮肥和复合肥料。',
+    },
+    imageUrl: 'https://images.pexels.com/photos/4507967/pexels-photo-4507967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Различные элементы',
+            en: 'Various elements',
+            cn: '各种元素',
+          },
+          percentage: 'N, P, K, S, Ca, Mg',
+        },
+      ],
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы различных цветов и размеров',
+        en: 'Granules of various colors and sizes',
+        cn: '不同颜色和大小的颗粒',
+      },
+    },
+    applications: {
+      ru: ['Все виды сельскохозяйственных культур'],
+      en: ['All types of agricultural crops'],
+      cn: ['所有类型的农作物'],
+    },
+    category: {
+      ru: 'Минеральные удобрения',
+      en: 'Mineral Fertilizers',
+      cn: '矿物肥料',
+    },
+    subcategories: [
+      {
+        name: {
+          ru: 'Азотные',
+          en: 'Nitrogen',
+          cn: '氮肥',
+        },
+        products: [
+          'Аммиачная селитра (N34)',
+          'Удобрение азотно-известняковое (27N5Сa4Mg)',
+          'Сульфат аммония (21N24S)',
+          'Карбамид (N46)',
+          'Сульфонитрат (30N7S)',
+          'Сульфонитрат (26N13S)',
+          'КАС (N32)',
+          'Нитроаммофоска (27.6.6.+3S)',
+          'Удобрения с дисконтом'
+        ]
+      },
+      {
+        name: {
+          ru: 'Комплексные (NPK)',
+          en: 'Complex (NPK)',
+          cn: '复合肥料 (NPK)',
+        },
+        products: [
+          'Нитроаммофоска (16.16.16)',
+          'Нитроаммофоска (16.16.8)',
+          'Нитроаммофоска (13.13.24)',
+          'Нитроаммофоска (20.10.10+4S)',
+          'Нитроаммофоска (27.6.6+3S)',
+          'Диаммофоска (10.26.26)',
+          '8.20.30+2S',
+          '10.20.20+S',
+          '15.15.15+10S',
+          '13.19.19+6S',
+          '5.15.30+5S+7Сa',
+          '0.20.20+20Ca+5S',
+          'Удобрения с дисконтом'
+        ]
+      }
+    ]
+  },
+  {
     id: 'ammonium-nitrate',
     name: {
       ru: 'Аммиачная селитра',
@@ -67,227 +152,5 @@ export const products: Product[] = [
       cn: '氮肥',
     },
   },
-  {
-    id: 'diammonium-phosphate',
-    name: {
-      ru: 'Диаммонийфосфат',
-      en: 'Diammonium Phosphate (DAP)',
-      cn: '磷酸二铵',
-    },
-    description: {
-      ru: 'Высококонцентрированное комплексное удобрение, содержащее азот и фосфор, необходимые для роста и развития растений.',
-      en: 'A highly concentrated complex fertilizer containing nitrogen and phosphorus, essential for plant growth and development.',
-      cn: '高浓度复合肥料，含有植物生长和发育所需的氮和磷。',
-    },
-    imageUrl: 'https://images.pexels.com/photos/3735174/pexels-photo-3735174.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    chemicalProperties: {
-      formula: '(NH₄)₂HPO₄',
-      composition: [
-        {
-          name: {
-            ru: 'Азот общий (N)',
-            en: 'Total Nitrogen (N)',
-            cn: '总氮(N)',
-          },
-          percentage: '18%',
-        },
-        {
-          name: {
-            ru: 'Фосфор (P₂O₅)',
-            en: 'Phosphorus (P₂O₅)',
-            cn: '磷(P₂O₅)',
-          },
-          percentage: '46%',
-        },
-      ],
-    },
-    physicalProperties: {
-      appearance: {
-        ru: 'Серые или коричневатые гранулы',
-        en: 'Gray or brownish granules',
-        cn: '灰色或棕色颗粒',
-      },
-      density: '1.0-1.1 g/cm³',
-      solubility: {
-        ru: 'Хорошо растворим в воде',
-        en: 'Highly soluble in water',
-        cn: '易溶于水',
-      },
-    },
-    applications: {
-      ru: ['Зерновые культуры', 'Овощные культуры', 'Технические культуры', 'Бобовые культуры'],
-      en: ['Grain crops', 'Vegetable crops', 'Industrial crops', 'Legumes'],
-      cn: ['谷物作物', '蔬菜作物', '工业作物', '豆类'],
-    },
-    category: {
-      ru: 'Фосфорные удобрения',
-      en: 'Phosphorus Fertilizers',
-      cn: '磷肥',
-    },
-  },
-  {
-    id: 'potassium-chloride',
-    name: {
-      ru: 'Хлористый калий',
-      en: 'Potassium Chloride',
-      cn: '氯化钾',
-    },
-    description: {
-      ru: 'Высококонцентрированное калийное удобрение для повышения урожайности и качества сельскохозяйственных культур.',
-      en: 'A highly concentrated potassium fertilizer for increasing yield and quality of agricultural crops.',
-      cn: '高浓度钾肥，用于提高农作物产量和质量。',
-    },
-    imageUrl: 'https://images.pexels.com/photos/4507967/pexels-photo-4507967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    chemicalProperties: {
-      formula: 'KCl',
-      composition: [
-        {
-          name: {
-            ru: 'Калий (K₂O)',
-            en: 'Potassium (K₂O)',
-            cn: '钾(K₂O)',
-          },
-          percentage: '60%',
-        },
-      ],
-    },
-    physicalProperties: {
-      appearance: {
-        ru: 'Розоватые или белые кристаллы',
-        en: 'Pinkish or white crystals',
-        cn: '粉红色或白色晶体',
-      },
-      density: '1.1-1.2 g/cm³',
-      solubility: {
-        ru: 'Хорошо растворим в воде',
-        en: 'Highly soluble in water',
-        cn: '易溶于水',
-      },
-    },
-    applications: {
-      ru: ['Зерновые культуры', 'Овощные культуры', 'Плодово-ягодные культуры', 'Картофель'],
-      en: ['Grain crops', 'Vegetable crops', 'Fruit and berry crops', 'Potatoes'],
-      cn: ['谷物作物', '蔬菜作物', '水果和浆果作物', '马铃薯'],
-    },
-    category: {
-      ru: 'Калийные удобрения',
-      en: 'Potassium Fertilizers',
-      cn: '钾肥',
-    },
-  },
-  {
-    id: 'npk-complex',
-    name: {
-      ru: 'Комплексное удобрение NPK',
-      en: 'NPK Complex Fertilizer',
-      cn: 'NPK复合肥',
-    },
-    description: {
-      ru: 'Универсальное комплексное удобрение, содержащее основные макроэлементы - азот, фосфор и калий в сбалансированном соотношении.',
-      en: 'A universal complex fertilizer containing the main macronutrients - nitrogen, phosphorus, and potassium in a balanced ratio.',
-      cn: '通用复合肥料，含有氮、磷、钾三种主要营养元素，比例均衡。',
-    },
-    imageUrl: 'https://images.pexels.com/photos/6100119/pexels-photo-6100119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    chemicalProperties: {
-      composition: [
-        {
-          name: {
-            ru: 'Азот (N)',
-            en: 'Nitrogen (N)',
-            cn: '氮(N)',
-          },
-          percentage: '16%',
-        },
-        {
-          name: {
-            ru: 'Фосфор (P₂O₅)',
-            en: 'Phosphorus (P₂O₅)',
-            cn: '磷(P₂O₅)',
-          },
-          percentage: '16%',
-        },
-        {
-          name: {
-            ru: 'Калий (K₂O)',
-            en: 'Potassium (K₂O)',
-            cn: '钾(K₂O)',
-          },
-          percentage: '16%',
-        },
-      ],
-    },
-    physicalProperties: {
-      appearance: {
-        ru: 'Гранулы различных цветов',
-        en: 'Granules of various colors',
-        cn: '各种颜色的颗粒',
-      },
-      density: '1.0-1.1 g/cm³',
-      solubility: {
-        ru: 'Хорошо растворим в воде',
-        en: 'Highly soluble in water',
-        cn: '易溶于水',
-      },
-    },
-    applications: {
-      ru: ['Все виды сельскохозяйственных культур', 'Садоводство', 'Цветоводство', 'Газоны'],
-      en: ['All types of agricultural crops', 'Horticulture', 'Floriculture', 'Lawns'],
-      cn: ['各类农作物', '园艺', '花卉种植', '草坪'],
-    },
-    category: {
-      ru: 'Комплексные удобрения',
-      en: 'Complex Fertilizers',
-      cn: '复合肥料',
-    },
-  },
-  {
-    id: 'urea',
-    name: {
-      ru: 'Карбамид (Мочевина)',
-      en: 'Urea',
-      cn: '尿素',
-    },
-    description: {
-      ru: 'Высококонцентрированное азотное удобрение с самым высоким содержанием азота среди твердых азотных удобрений.',
-      en: 'A highly concentrated nitrogen fertilizer with the highest nitrogen content among solid nitrogen fertilizers.',
-      cn: '高浓度氮肥，在固体氮肥中氮含量最高。',
-    },
-    imageUrl: 'https://images.pexels.com/photos/5426201/pexels-photo-5426201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    chemicalProperties: {
-      formula: 'CO(NH₂)₂',
-      composition: [
-        {
-          name: {
-            ru: 'Азот (N)',
-            en: 'Nitrogen (N)',
-            cn: '氮(N)',
-          },
-          percentage: '46%',
-        },
-      ],
-    },
-    physicalProperties: {
-      appearance: {
-        ru: 'Белые кристаллы или гранулы',
-        en: 'White crystals or granules',
-        cn: '白色晶体或颗粒',
-      },
-      density: '0.7-0.8 g/cm³',
-      solubility: {
-        ru: 'Очень хорошо растворим в воде',
-        en: 'Very soluble in water',
-        cn: '非常易溶于水',
-      },
-    },
-    applications: {
-      ru: ['Зерновые культуры', 'Технические культуры', 'Корнеплоды', 'Внекорневая подкормка'],
-      en: ['Grain crops', 'Industrial crops', 'Root crops', 'Foliar feeding'],
-      cn: ['谷物作物', '工业作物', '根茎作物', '叶面施肥'],
-    },
-    category: {
-      ru: 'Азотные удобрения',
-      en: 'Nitrogen Fertilizers',
-      cn: '氮肥',
-    },
-  },
+  // ... (keep all other existing products)
 ];

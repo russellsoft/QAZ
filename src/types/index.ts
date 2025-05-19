@@ -45,6 +45,14 @@ export interface Product {
     en: string;
     cn: string;
   };
+  subcategories?: {
+    name: {
+      ru: string;
+      en: string;
+      cn: string;
+    };
+    products: string[];
+  }[];
 }
 
 export interface NewsItem {
