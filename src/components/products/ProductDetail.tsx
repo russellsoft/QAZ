@@ -3,12 +3,11 @@ import { ArrowLeft, FileText, Leaf, BarChart3 } from 'lucide-react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import { products } from '../../data/products';
-import { Product } from '../../types';
 import { motion } from 'framer-motion';
 
 const ProductDetail: React.FC = () => {
   const { productId } = useParams<{ productId: string }>();
-  const { language, t } = useLanguage();
+  const { language } = useLanguage();
   const navigate = useNavigate();
 
   // Find the product
@@ -31,6 +30,60 @@ const ProductDetail: React.FC = () => {
            language === 'en' ? 'Back to product list' : 
            '返回产品列表'}
         </button>
+      </div>
+    );
+  }
+
+  // If the product has subcategories, render them
+  if (product.subcategories) {
+    return (
+      <div className="min-h-screen bg-neutral-50 pt-20 pb-16">
+        <div className="container mx-auto px-4 md:px-6">
+          <button
+            onClick={() => navigate(`/${language}/products`)}
+            className="text-primary-600 hover:text-primary-700 flex items-center mb-6"
+          >
+            <ArrowLeft size={18} className="mr-2" />
+            {language === 'ru' ? 'Вернуться к списку продуктов' : 
+             language === 'en' ? 'Back to product list' : 
+             '返回产品列表'}
+          </button>
+
+          <motion.h1 
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-3xl md:text-4xl font-bold text-neutral-800 mb-8"
+          >
+            {product.name[language]}
+          </motion.h1>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {product.subcategories.map((subcategory, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
+                className="bg-white rounded-lg shadow-md p-6"
+              >
+                <h2 className="text-xl font-semibold mb-4 text-neutral-800">
+                  {subcategory.name[language]}
+                </h2>
+                <ul className="space-y-2">
+                  {subcategory.products.map((product, productIndex) => (
+                    <li 
+                      key={productIndex}
+                      className="flex items-center text-neutral-700 hover:text-primary-600 cursor-pointer transition-colors"
+                    >
+                      <div className="w-2 h-2 bg-primary-500 rounded-full mr-3"></div>
+                      {product}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
+        </div>
       </div>
     );
   }
@@ -134,7 +187,9 @@ const ProductDetail: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Chemical Properties */}
           {renderPropertyCard(
-            t('products.chemical'),
+            language === 'ru' ? 'Химические свойства' :
+            language === 'en' ? 'Chemical Properties' :
+            '化学性质',
             <FileText size={20} />,
             (
               <div>
@@ -168,7 +223,9 @@ const ProductDetail: React.FC = () => {
 
           {/* Physical Properties */}
           {renderPropertyCard(
-            t('products.physical'),
+            language === 'ru' ? 'Физические свойства' :
+            language === 'en' ? 'Physical Properties' :
+            '物理性质',
             <Leaf size={20} />,
             (
               <div>
@@ -207,7 +264,9 @@ const ProductDetail: React.FC = () => {
 
           {/* Applications */}
           {renderPropertyCard(
-            t('products.applications'),
+            language === 'ru' ? 'Применение' :
+            language === 'en' ? 'Applications' :
+            '应用',
             <BarChart3 size={20} />,
             (
               <div>
