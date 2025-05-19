@@ -1993,5 +1993,271 @@ export const products: Product[] = [
       en: 'Complex fertilizers',
       cn: '复合肥料'
     }
+  },
+  {
+    id: 'pk-5-55',
+    name: {
+      ru: 'PK 5:55 (KCL.P)',
+      en: 'PK 5:55 (KCL.P)',
+      cn: 'PK 5:55 (KCL.P)'
+    },
+    description: {
+      ru: 'Комплексное калийно-фосфорное удобрение с высоким содержанием калия, особенно эффективное для культур с повышенной потребностью в калии.',
+      en: 'Complex potassium-phosphorus fertilizer with high potassium content, especially effective for crops with increased potassium demand.',
+      cn: '高钾含量的钾磷复合肥料，特别适用于高需钾作物。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560045/pexels-photo-5560045.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '55%'
+        },
+        {
+          name: {
+            ru: 'Фосфор (P₂O₅)',
+            en: 'Phosphorus (P₂O₅)',
+            cn: '磷 (P₂O₅)'
+          },
+          percentage: '5%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы розового или белого цвета',
+        en: 'Pink or white granules',
+        cn: '粉红色或白色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Особенно эффективно для корнеплодов и бахчевых культур',
+        'Применение на почвах с дефицитом калия'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Especially effective for root crops and melons',
+        'Application on potassium-deficient soils'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '特别适用于根茎作物和甜瓜类',
+        '缺钾土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Калийные удобрения',
+      en: 'Potassium fertilizers',
+      cn: '钾肥'
+    }
+  },
+  {
+    id: 'kalimag',
+    name: {
+      ru: 'Калиймаг (46K5Mg)',
+      en: 'Kalimag (46K5Mg)',
+      cn: '钾镁肥 (46K5Mg)'
+    },
+    description: {
+      ru: 'Комплексное калийно-магниевое удобрение для культур с повышенной потребностью в калии и магнии.',
+      en: 'Complex potassium-magnesium fertilizer for crops with increased demand for potassium and magnesium.',
+      cn: '适用于高需钾和镁作物的钾镁复合肥料。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560046/pexels-photo-5560046.jpeg',
+    chemicalProperties: {
+      composition: [
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '46%'
+        },
+        {
+          name: {
+            ru: 'Магний (MgO)',
+            en: 'Magnesium (MgO)',
+            cn: '镁 (MgO)'
+          },
+          percentage: '5%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы светло-серого цвета',
+        en: 'Light gray granules',
+        cn: '浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под все культуры',
+        'Особенно эффективно для картофеля и овощных культур',
+        'Применение на почвах с дефицитом магния'
+      ],
+      en: [
+        'Basic application for all crops',
+        'Especially effective for potatoes and vegetable crops',
+        'Application on magnesium-deficient soils'
+      ],
+      cn: [
+        '适用于所有作物的基础施肥',
+        '特别适用于马铃薯和蔬菜作物',
+        '缺镁土壤施用'
+      ]
+    },
+    category: {
+      ru: 'Калийные удобрения',
+      en: 'Potassium fertilizers',
+      cn: '钾肥'
+    }
+  },
+  {
+    id: 'potassium-sulfate-granular',
+    name: {
+      ru: 'Калий сернокислый гранулированный',
+      en: 'Granular Potassium Sulfate',
+      cn: '颗粒硫酸钾'
+    },
+    description: {
+      ru: 'Высококонцентрированное бесхлорное калийное удобрение с содержанием серы, особенно эффективное для культур, чувствительных к хлору.',
+      en: 'Highly concentrated chlorine-free potassium fertilizer containing sulfur, especially effective for chlorine-sensitive crops.',
+      cn: '高浓度无氯钾肥，含硫，特别适用于氯敏感作物。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560047/pexels-photo-5560047.jpeg',
+    chemicalProperties: {
+      formula: 'K2SO4',
+      composition: [
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '50%'
+        },
+        {
+          name: {
+            ru: 'Сера (S)',
+            en: 'Sulfur (S)',
+            cn: '硫 (S)'
+          },
+          percentage: '18%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Гранулы белого или светло-серого цвета',
+        en: 'White or light gray granules',
+        cn: '白色或浅灰色颗粒'
+      },
+      solubility: {
+        ru: 'Хорошо растворим в воде',
+        en: 'Highly soluble in water',
+        cn: '易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Основное внесение под чувствительные к хлору культуры',
+        'Подкормка овощных и плодовых культур',
+        'Применение в защищенном грунте'
+      ],
+      en: [
+        'Basic application for chlorine-sensitive crops',
+        'Feeding vegetable and fruit crops',
+        'Application in protected soil'
+      ],
+      cn: [
+        '氯敏感作物基础施肥',
+        '蔬菜和水果作物追肥',
+        '保护地栽培施用'
+      ]
+    },
+    category: {
+      ru: 'Калийные удобрения',
+      en: 'Potassium fertilizers',
+      cn: '钾肥'
+    }
+  },
+  {
+    id: 'potassium-carbonate',
+    name: {
+      ru: 'Поташ (Карбонат калия)',
+      en: 'Potash (Potassium Carbonate)',
+      cn: '碳酸钾'
+    },
+    description: {
+      ru: 'Высококонцентрированное калийное удобрение без хлора и серы, с щелочной реакцией.',
+      en: 'Highly concentrated potassium fertilizer without chlorine and sulfur, with alkaline reaction.',
+      cn: '高浓度无氯无硫钾肥，碱性反应。'
+    },
+    imageUrl: 'https://images.pexels.com/photos/5560048/pexels-photo-5560048.jpeg',
+    chemicalProperties: {
+      formula: 'K2CO3',
+      composition: [
+        {
+          name: {
+            ru: 'Калий (K₂O)',
+            en: 'Potassium (K₂O)',
+            cn: '钾 (K₂O)'
+          },
+          percentage: '68%'
+        }
+      ]
+    },
+    physicalProperties: {
+      appearance: {
+        ru: 'Белые кристаллы или гранулы',
+        en: 'White crystals or granules',
+        cn: '白色晶体或颗粒'
+      },
+      solubility: {
+        ru: 'Очень хорошо растворим в воде',
+        en: 'Very highly soluble in water',
+        cn: '极易溶于水'
+      }
+    },
+    applications: {
+      ru: [
+        'Применение на кислых почвах',
+        'Подкормка овощных культур',
+        'Особенно эффективен для культур, чувствительных к хлору и сере'
+      ],
+      en: [
+        'Application on acidic soils',
+        'Feeding vegetable crops',
+        'Especially effective for crops sensitive to chlorine and sulfur'
+      ],
+      cn: [
+        '酸性土壤施用',
+        '蔬菜作物追肥',
+        '特别适用于氯和硫敏感作物'
+      ]
+    },
+    category: {
+      ru: 'Калийные удобрения',
+      en: 'Potassium fertilizers',
+      cn: '钾肥'
+    }
   }
 ];
