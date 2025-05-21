@@ -43,12 +43,12 @@ const Contacts: React.FC = () => {
           cn: '总部（阿拉木图）',
         },
         address: {
-          ru: 'пр. Абая 52, Алматы, Казахстан, 050008',
-          en: '52 Abay Avenue, Almaty, Kazakhstan, 050008',
-          cn: '哈萨克斯坦阿拉木图阿拜大道52号，050008',
+          ru: 'Республика Казахстан, Мангистауская область, город Актау, промышленная зона 6, здание 150',
+          en: 'Republic of Kazakhstan, Mangystau region, Aktau city, industrial zone 6, building 150',
+          cn: '哈萨克斯坦共和国，Mangystau地区，阿克套市，工业区6，150栋',
         },
-        phone: '+7 (727) 123-45-67',
-        email: 'info@qaz-fertilizers.kz',
+        phone: '+ 7 778 587 96 48',
+        email: 'info@qaz.kz',
         mapPosition: { lat: 43.238949, lng: 76.889709 },
       },
       {
@@ -63,7 +63,7 @@ const Contacts: React.FC = () => {
           cn: '哈萨克斯坦阿斯塔纳库纳耶夫街12/1号，010000',
         },
         phone: '+7 (717) 234-56-78',
-        email: 'astana@qaz-fertilizers.kz',
+        email: 'astana@qaz.kz',
         mapPosition: { lat: 51.128207, lng: 71.430420 },
       },
     ],
@@ -79,7 +79,7 @@ const Contacts: React.FC = () => {
         cn: '哈萨克斯坦卡拉干达地区卡拉干达工业区，100000',
       },
       phone: '+7 (721) 345-67-89',
-      email: 'factory@qaz-fertilizers.kz',
+      email: 'factory@qaz.kz',
       mapPosition: { lat: 49.801536, lng: 73.107207 },
     },
   };
@@ -446,9 +446,9 @@ const Contacts: React.FC = () => {
                        '法定地址：'}
                     </span>
                     <span className="block">
-                      {language === 'ru' ? 'Республика Казахстан, г. Алматы, пр. Абая 52' : 
-                       language === 'en' ? 'Republic of Kazakhstan, Almaty, 52 Abay Avenue' : 
-                       '哈萨克斯坦共和国，阿拉木图，阿拜大道52号'}
+                      {language === 'ru' ? 'Казахстан, город Алматы, Бостандыкский район, Площадь Республики, дом 15, почтовый индекс 050013' :
+                       language === 'en' ? 'Kazakhstan, Almaty city, Bostandyk district, Republic Square, house 15, postal code 050013' :
+                       '哈萨克斯坦，阿拉木图市，Bostandyk区，共和国广场，house15，邮政编码050013'}
                     </span>
                   </li>
                   <li>

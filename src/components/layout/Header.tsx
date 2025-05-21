@@ -57,7 +57,7 @@ const Header: React.FC = () => {
             className="flex items-center cursor-pointer" 
             onClick={() => navigate(`/${language}/`)}
           >
-            <span className={`text-2xl font-bold ${isHome ? (isScrolled ? 'text-primary-700' : 'text-white') : 'text-primary-700'}`}>QAZ</span>
+            <span className={`text-2xl font-bold ${isHome ? (isScrolled ? 'text-primary-700' : 'text-white') : 'text-primary-700'}`}>QAZ BOXZ</span>
           </div>
 
           {/* Desktop Navigation */}
@@ -109,11 +109,7 @@ const Header: React.FC = () => {
             className="md:hidden text-2xl"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
-            {isMenuOpen ? (
-                isHome ? (isScrolled ? 'text-neutral-800' : 'text-white') : 'text-neutral-800'
-            ) : (
-              <Menu className={isHome ? (isScrolled ? 'text-neutral-800' : 'text-white') : 'text-neutral-800'} />
-            )}
+            <Menu className={isHome ? (isScrolled ? 'text-neutral-800' : 'text-white') : 'text-neutral-800'} />
           </button>
         </div>
       </div>

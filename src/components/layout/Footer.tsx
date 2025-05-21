@@ -70,18 +70,18 @@ const Footer: React.FC = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <PhoneCall size={18} className="text-primary-400 mt-1 mr-3 flex-shrink-0" />
-                <span className="text-neutral-300">+7 (727) 123-45-67</span>
+                <span className="text-neutral-300">+ 7 (778) 587 96 48</span>
               </li>
               <li className="flex items-start">
                 <Mail size={18} className="text-primary-400 mt-1 mr-3 flex-shrink-0" />
-                <span className="text-neutral-300">info@qaz-fertilizers.kz</span>
+                <span className="text-neutral-300">info@qaz.kz</span>
               </li>
               <li className="flex items-start">
                 <MapPin size={18} className="text-primary-400 mt-1 mr-3 flex-shrink-0" />
                 <span className="text-neutral-300">
-                  {language === 'ru' && 'пр. Абая 52, Алматы, Казахстан'}
-                  {language === 'en' && '52 Abay Avenue, Almaty, Kazakhstan'}
-                  {language === 'cn' && '哈萨克斯坦阿拉木图阿拜大道52号'}
+                  {language === 'ru' && 'Промышленная зона, г. Караганда, Карагандинская область, Казахстан, 100000'}
+                  {language === 'en' && 'Industrial Zone, Karaganda, Karaganda Region, Kazakhstan, 100000'}
+                  {language === 'cn' && '哈萨克斯坦卡拉干达地区卡拉干达工业区，100000'}
                 </span>
               </li>
             </ul>

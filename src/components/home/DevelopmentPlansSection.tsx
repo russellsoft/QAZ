@@ -120,7 +120,7 @@ const DevelopmentPlansSection: React.FC = () => {
                   className={`md:flex items-center ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}
                 >
                   {/* Year marker for desktop */}
-                  <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary-600 text-white flex items-center justify-center font-bold z-10">
+                  <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-12 h-12 rounded-full bg-primary-600 text-white items-center justify-center font-bold z-10">
                     {item.year}
                   </div>
                   

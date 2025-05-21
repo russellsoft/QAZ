@@ -68,7 +68,7 @@ const About: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-3xl md:text-5xl font-bold mb-6 text-center"
           >
-            {language === 'ru' ? 'О компании QAZ' : language === 'en' ? 'About QAZ' : '关于QAZ'}
+            {language === 'ru' ? 'О компании QAZ BOXZ' : language === 'en' ? 'About QAZ BOXZ' : '关于QAZ BOXZ'}
           </motion.h1>
           <motion.p 
             initial={{ opacity: 0 }}
